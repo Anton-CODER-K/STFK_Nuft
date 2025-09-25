@@ -55,7 +55,7 @@
       box-shadow: 0 18px 40px rgba(11,30,80,0.12);
     }
     .avatar{
-      width:84px;height:84px;border-radius:16px;flex:0 0 84px;overflow:hidden;
+      width:128px;height:128px;border-radius:16px;flex:0 0 128px;overflow:hidden;
       display:grid;place-items:center;background:linear-gradient(135deg,#eef6ff,#fff);
     }
     .avatar img{width:100%;height:100%;object-fit:cover;display:block}
@@ -81,6 +81,20 @@
     }
     .small{font-size:12px;color:var(--muted);}
 
+    @keyframes glow {
+    0% {
+    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 40px #d4af37;
+    }
+    50% {
+    box-shadow: 0 0 20px #ffec8b, 0 0 40px #ffd700, 0 0 80px #d4af37;
+    }
+    100% {
+    box-shadow: 0 0 10px #ffd700, 0 0 30px #ffcc00, 0 0 60px #ffb700;
+    }
+}
+
+
+
     /* адаптивні дрібниці */
     @media (max-width:520px){
       body{padding:16px}
@@ -98,50 +112,44 @@
 
     <main class="grid">
       <!-- Картка 1 -->
-      <a class="card" href="student-ivanov.html">
+      <a class="card" href="student1.html">
         <div class="avatar">
-          <img src="https://picsum.photos/seed/ivan/400/400" alt="Іван Іванов">
+          <img src="https://picsum.photos/seed/ivan/400/400" alt="Антон Ключкович">
         </div>
         <div class="info">
           <div class="name">
-            <h3>Іван Кукульник</h3>
-            <div class="small">Курс 2 · Комп'ютерщик
+            <h3>Антон Ключкович</h3>
+            <div class="small">Курс 3 · Комп'ютерщик
             </div>
           </div>
           <div class="role">Активний учасник студентської ради</div>
-          <div class="desc">Відзначається високими результатами у програмуванні. Вклав багато в наш коледж</div>
+          <div class="desc">Відзначається високими результатами у програмуванні.</div>
           <div class="badges">
             <div class="badge">1 місце — Олімпіада по Майкрософт</div>
-            <div class="badge">Організував збір</div>
+            
           </div>
         </div>
-        <div class="cta">
-          <div class="small">Детальніше</div>
-          <div class="btn">Переглянути</div>
-        </div>
+        
       </a>
 
       <!-- Картка 2 -->
-      <a class="card" href="student-petrova.html">
+      <a class="card" href="student-petrova.html" style="background: linear-gradient(45deg, #d4af37, #ffd700, #fff4b3, #d4af37); animation: glow 3s infinite alternate; color:#3b2f00;">
         <div class="avatar">
-          <img src="https://picsum.photos/seed/petra/400/400" alt="Петро Петренко">
+          <img src="https://picsum.photos/seed/petra/400/400" alt="Ерік Фененець">
         </div>
         <div class="info">
           <div class="name">
-            <h3>Петро Петренко</h3>
-            <div class="small">Курс 3 · Економіка</div>
+            <h3>Ерік Фененець</h3>
+            <div class="small">Курс 2 · Економіка</div>
           </div>
-          <div class="role">Капітан команди з дебатів</div>
+          <div class="role">Голова студентської ради</div>
           <div class="desc">Чемпіон університетських дебатів, організатор благодійних проєктів та ментор першокурсників.</div>
           <div class="badges">
-            <div class="badge">Чемпіон дебатів</div>
-            <div class="badge">Ментор</div>
+            <div class="badge">Голова студентської ради</div>
+            
           </div>
         </div>
-        <div class="cta">
-          <div class="small">Детальніше</div>
-          <div class="btn">Переглянути</div>
-        </div>
+       
       </a>
 
       <!-- додай ще карток тут -->
