@@ -1,0 +1,50 @@
+<!-- student-ivanov.html -->
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Іван Іванов — Профіль</title>
+  <style>
+    body{font-family:Inter, system-ui, Arial; margin:0; background:#f7f9fc; color:#0b1220; padding:28px;}
+    .card{max-width:900px;margin:0 auto;background:#fff;border-radius:16px;padding:28px;box-shadow:0 12px 36px rgba(10,20,50,0.06);display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
+    .avatar{width:200px;height:200px;border-radius:12px;overflow:hidden}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0 0 6px 0}
+    .meta{color:#6b7280;margin-bottom:14px}
+    .ach{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .ach span{background:linear-gradient(90deg,#fff,#f2f6ff);padding:8px 10px;border-radius:10px;border:1px solid rgba(43,110,246,0.06)}
+    .back{display:inline-block;margin-bottom:14px;text-decoration:none;color:#2b6ef6}
+    @media (max-width:720px){.card{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">← Назад до дошки пошани</a>
+  <div class="card">
+    <div>
+      <div class="avatar"><img src="https://picsum.photos/seed/ivan/800/800" alt=""></div>
+      <div style="margin-top:12px;color:#374151">Курс 2 · Фізтех</div>
+    </div>
+    <div>
+      <h1>Іван Іванов</h1>
+      <div class="meta">Координатор IT-лабораторії · Активний волонтер</div>
+
+      <p>Короткий опис: Іван — талановитий студент, який зарекомендував себе як відповідальний лідер групи та ментор для новачків. Працює над стартапом у сфері освітніх продуктів.</p>
+
+      <h3>Досягнення</h3>
+      <div class="ach">
+        <span>1 місце — хакатон 2025</span>
+        <span>Відзнака декана</span>
+        <span>Кращий ментор семестру</span>
+      </div>
+
+      <h3 style="margin-top:18px">Деталі</h3>
+      <ul>
+        <li>Керував командою з 6 людей на проєкті X</li>
+        <li>Провів 10 воркшопів для першого курсу</li>
+        <li>Середній бал: 4.9/5</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
